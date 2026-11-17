@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+rapidfuzz
+indic-transliteration
+duckdb
+lightgbm
+pyarrow
+tqdm
+boto3
+jupyter
+ipykernel

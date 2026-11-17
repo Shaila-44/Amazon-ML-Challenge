@@ -1,0 +1,28 @@
+[      0s] run config: {"run_id": "v3-k200", "started_utc": "2026-09-26T01:46:41.230815+00:00", "processed_dir": "/home/ubuntu/amazon/dataset/processed", "train_gt": "/home/ubuntu/amazon/dataset_meta/train_ground_truth.tsv", "test_s1": "/home/ubuntu/amazon/dataset_meta/test_source1.tsv", "out_dir": "/home/ubuntu/amazon/output_v3", "artifacts_dir": "/home/ubuntu/amazon/artifacts_v3", "top_k": 200, "max_train_negatives": 8000000, "n_val_entities": 50000, "memory_limit_gb": 46, "workers": 8, "seeds": {"holdout": "solaris-val-v2", "negatives": "solaris-neg-v2", "tfidf_sample": "solaris-tfidf-v2", "lightgbm": 42}, "blocking_config": {"top_k": 200, "min_token_len": 2, "max_doc_freq_frac": 0.02, "max_doc_freq_abs": 1500, "max_tokens_per_entity": 8, "token_selection": "rarest tokens that survive the S2/S3 doc-frequency filter", "ranking": "idf_same DESC, idf_all DESC, hash(candidate_entity_id)"}, "baseline_model": "/home/ubuntu/amazon/dataset/processed/_model_checkpoint.txt", "baseline_vec": "/home/ubuntu/amazon/dataset/processed/_vec_checkpoint.pkl", "code_md5": {"__init__.py": "d41d8cd98f00b204e9800998ecf8427e", "blocking.py": "b81cc8589aafbba6f287334fd6d3764c", "diagnostics.py": "0cf81ee5223ae2d06daf4b28ef5f63be", "features.py": "06aabf89cffdc90ee0f2d5128507dd1c", "matching.py": "ffb947438518418a8fac5a8722ed3c8d", "normalize.py": "d82537893aa80ba89fbf802be4f9d5f4", "parallel_features.py": "d637b6a72168cbb24c45da3527ef39cc", "pipeline.py": "a04c0b5a8e02d99ae96bef4056f3338b", "preprocess.py": "7702278af7c65ef42e975f5e3b5b2650", "scoring.py": "77809ed2ff1526a0753ac0ab8f81f172"}}
+[     22s] tfidf fit on 600000 names (holdout excluded): vocab size=98928
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/ubuntu/amazon/code/business_entity_resolution/src/pipeline.py", line 562, in <module>
+    main()
+  File "/home/ubuntu/amazon/code/business_entity_resolution/src/pipeline.py", line 552, in main
+    run(
+  File "/home/ubuntu/amazon/code/business_entity_resolution/src/pipeline.py", line 473, in run
+    model_path, threshold, con = _train_and_tune(
+  File "/home/ubuntu/amazon/code/business_entity_resolution/src/pipeline.py", line 283, in _train_and_tune
+    blocking.generate_candidates(con, *train_s, top_k=top_k).write_parquet(cands)
+  File "/home/ubuntu/amazon/code/business_entity_resolution/src/blocking.py", line 197, in generate_candidates
+    rel.write_parquet(part_path)
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (40.5 GiB/40.5 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads

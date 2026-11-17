@@ -1,0 +1,46 @@
+[19s] India: top-200 candidates built
+[39s] US: top-200 candidates built
+[40s] top-200 candidate pairs: 6963357
+  [15s] joined + sharded into 32 files
+  [61s] shard 1/32 done, 209938 pairs scored
+  [61s] shard 2/32 done, 422538 pairs scored
+  [61s] shard 3/32 done, 632777 pairs scored
+  [61s] shard 4/32 done, 844561 pairs scored
+  [62s] shard 5/32 done, 1062068 pairs scored
+  [62s] shard 6/32 done, 1281919 pairs scored
+  [63s] shard 7/32 done, 1501332 pairs scored
+  [64s] shard 8/32 done, 1723129 pairs scored
+  [106s] shard 9/32 done, 1936861 pairs scored
+  [107s] shard 10/32 done, 2152731 pairs scored
+  [108s] shard 11/32 done, 2367036 pairs scored
+  [108s] shard 12/32 done, 2582211 pairs scored
+  [109s] shard 13/32 done, 2804819 pairs scored
+  [109s] shard 14/32 done, 3021970 pairs scored
+  [110s] shard 15/32 done, 3245744 pairs scored
+  [112s] shard 16/32 done, 3471355 pairs scored
+  [153s] shard 17/32 done, 3681012 pairs scored
+  [154s] shard 18/32 done, 3897469 pairs scored
+  [154s] shard 19/32 done, 4118655 pairs scored
+  [154s] shard 20/32 done, 4331060 pairs scored
+  [156s] shard 21/32 done, 4538985 pairs scored
+  [156s] shard 22/32 done, 4761823 pairs scored
+  [157s] shard 23/32 done, 4978633 pairs scored
+  [157s] shard 24/32 done, 5206561 pairs scored
+  [197s] shard 25/32 done, 5412169 pairs scored
+  [197s] shard 26/32 done, 5623339 pairs scored
+  [199s] shard 27/32 done, 5842185 pairs scored
+  [200s] shard 28/32 done, 6063621 pairs scored
+  [202s] shard 29/32 done, 6288568 pairs scored
+  [202s] shard 30/32 done, 6511551 pairs scored
+  [202s] shard 31/32 done, 6733219 pairs scored
+  [203s] shard 32/32 done, 6963357 pairs scored
+
+===== ESTIMATED HOLDOUT F_0.5 BY K (current model; reference: current blocking best = 0.6468 @0.96) =====
+  K=50 done (253s)
+  K=100 done (258s)
+  K=200 done (263s)
+  K   pairs  pair_recall  ceiling_F05  best_threshold  best_F05  frac_empty  frac_F0  F05_India  F05_US
+ 50 1831544       0.6817       0.7777          0.9600    0.6789      0.2308   0.2167     0.7185  0.6523
+100 3599832       0.7208       0.8112          0.9600    0.7055      0.1982   0.1863     0.7360  0.6851
+200 6963357       0.7653       0.8472          0.9600    0.7337      0.1658   0.1563     0.7542  0.7200
+[263s] done

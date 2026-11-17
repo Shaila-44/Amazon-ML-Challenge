@@ -1,0 +1,87 @@
+=== determinism check: rebuild v1 @0.65 and diff against submitted file ===
+threshold=0.65 dedup=False: 6847098 pairs, 1483357/1732544 entities non-empty (0.8562), mean matches if any=4.616, records claimed by >1 S1: 367464
+{
+ "out": "/home/ubuntu/amazon/output_v1_rebuild/matching_results.tsv",
+ "threshold": 0.65,
+ "dedup": false,
+ "pairs": 6847098,
+ "frac_nonempty": 0.8562,
+ "mean_n_if_any": 4.616,
+ "records_claimed_by_multiple_s1": 367464,
+ "n_matches_hist": {
+  "0": 0.1438,
+  "1": 0.0762,
+  "2": 0.0942,
+  "3": 0.1263,
+  "4": 0.149,
+  "5": 0.1432,
+  "6": 0.1104,
+  "7": 0.07,
+  "8": 0.0387,
+  "9": 0.0193,
+  "10+": 0.0289
+ },
+ "by_country": {
+  "France": {
+   "frac_nonempty": 0.905,
+   "mean_n_if_any": 5.587
+  },
+  "India": {
+   "frac_nonempty": 0.8424,
+   "mean_n_if_any": 4.505
+  },
+  "US": {
+   "frac_nonempty": 0.8539,
+   "mean_n_if_any": 4.347
+  }
+ },
+ "by_source": {
+  "S2": 3845479,
+  "S3": 3001619
+ },
+ "leaderboard_score": null
+}
+identical rows vs /home/ubuntu/amazon/output/matching_results.tsv: 1.000000
+=== submission #2: threshold 0.96, no dedup ===
+threshold=0.96 dedup=False: 4439910 pairs, 1380249/1732544 entities non-empty (0.7967), mean matches if any=3.217, records claimed by >1 S1: 50737
+{
+ "out": "/home/ubuntu/amazon/output_v2/matching_results.tsv",
+ "threshold": 0.96,
+ "dedup": false,
+ "pairs": 4439910,
+ "frac_nonempty": 0.7967,
+ "mean_n_if_any": 3.217,
+ "records_claimed_by_multiple_s1": 50737,
+ "n_matches_hist": {
+  "0": 0.2033,
+  "1": 0.1353,
+  "2": 0.1669,
+  "3": 0.1775,
+  "4": 0.1457,
+  "5": 0.0934,
+  "6": 0.048,
+  "7": 0.02,
+  "8": 0.007,
+  "9": 0.0021,
+  "10+": 0.0008
+ },
+ "by_country": {
+  "France": {
+   "frac_nonempty": 0.7933,
+   "mean_n_if_any": 3.175
+  },
+  "India": {
+   "frac_nonempty": 0.7762,
+   "mean_n_if_any": 3.095
+  },
+  "US": {
+   "frac_nonempty": 0.8229,
+   "mean_n_if_any": 3.373
+  }
+ },
+ "by_source": {
+  "S2": 2371314,
+  "S3": 2068596
+ },
+ "leaderboard_score": null
+}

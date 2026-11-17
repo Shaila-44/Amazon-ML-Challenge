@@ -1,0 +1,266 @@
+[
+ {
+  "country": "US",
+  "step": "token_tables",
+  "s23_token_rows": 10997863,
+  "s1_token_rows": 1831201,
+  "seconds": 22.2,
+  "peak_disk_used_gb": 21.94
+ },
+ {
+  "country": "US",
+  "step": "bucket",
+  "bucket": 0,
+  "s1_entities_in_bucket": 80684,
+  "s1_entities_with_candidates": 80684,
+  "candidate_rows": 15460600,
+  "seconds": 45.2,
+  "peak_disk_used_gb": 22.09
+ },
+ {
+  "country": "US",
+  "step": "bucket",
+  "bucket": 1,
+  "s1_entities_in_bucket": 80779,
+  "s1_entities_with_candidates": 80779,
+  "candidate_rows": 15488990,
+  "seconds": 45.0,
+  "peak_disk_used_gb": 22.23
+ },
+ {
+  "country": "US",
+  "step": "bucket",
+  "bucket": 2,
+  "s1_entities_in_bucket": 80916,
+  "s1_entities_with_candidates": 80916,
+  "candidate_rows": 15516699,
+  "seconds": 45.2,
+  "peak_disk_used_gb": 22.37
+ },
+ {
+  "country": "US",
+  "step": "bucket",
+  "bucket": 3,
+  "s1_entities_in_bucket": 81011,
+  "s1_entities_with_candidates": 81011,
+  "candidate_rows": 15530542,
+  "seconds": 45.4,
+  "peak_disk_used_gb": 22.51
+ },
+ {
+  "country": "US",
+  "step": "bucket",
+  "bucket": 4,
+  "s1_entities_in_bucket": 80928,
+  "s1_entities_with_candidates": 80928,
+  "candidate_rows": 15497034,
+  "seconds": 45.3,
+  "peak_disk_used_gb": 22.66
+ },
+ {
+  "country": "US",
+  "step": "bucket",
+  "bucket": 5,
+  "s1_entities_in_bucket": 81385,
+  "s1_entities_with_candidates": 81385,
+  "candidate_rows": 15588294,
+  "seconds": 45.4,
+  "peak_disk_used_gb": 22.8
+ },
+ {
+  "country": "US",
+  "step": "bucket",
+  "bucket": 6,
+  "s1_entities_in_bucket": 80826,
+  "s1_entities_with_candidates": 80826,
+  "candidate_rows": 15485103,
+  "seconds": 43.8,
+  "peak_disk_used_gb": 22.94
+ },
+ {
+  "country": "US",
+  "step": "bucket",
+  "bucket": 7,
+  "s1_entities_in_bucket": 80715,
+  "s1_entities_with_candidates": 80715,
+  "candidate_rows": 15479015,
+  "seconds": 45.1,
+  "peak_disk_used_gb": 23.08
+ },
+ {
+  "country": "India",
+  "step": "token_tables",
+  "s23_token_rows": 13031591,
+  "s1_token_rows": 2307276,
+  "seconds": 35.2,
+  "peak_disk_used_gb": 23.08
+ },
+ {
+  "country": "India",
+  "step": "bucket",
+  "bucket": 0,
+  "s1_entities_in_bucket": 95873,
+  "s1_entities_with_candidates": 95873,
+  "candidate_rows": 17708430,
+  "seconds": 46.2,
+  "peak_disk_used_gb": 23.25
+ },
+ {
+  "country": "India",
+  "step": "bucket",
+  "bucket": 1,
+  "s1_entities_in_bucket": 95872,
+  "s1_entities_with_candidates": 95872,
+  "candidate_rows": 17691195,
+  "seconds": 46.5,
+  "peak_disk_used_gb": 23.41
+ },
+ {
+  "country": "India",
+  "step": "bucket",
+  "bucket": 2,
+  "s1_entities_in_bucket": 95730,
+  "s1_entities_with_candidates": 95730,
+  "candidate_rows": 17681866,
+  "seconds": 46.7,
+  "peak_disk_used_gb": 23.57
+ },
+ {
+  "country": "India",
+  "step": "bucket",
+  "bucket": 3,
+  "s1_entities_in_bucket": 96109,
+  "s1_entities_with_candidates": 96109,
+  "candidate_rows": 17741639,
+  "seconds": 46.8,
+  "peak_disk_used_gb": 23.74
+ },
+ {
+  "country": "India",
+  "step": "bucket",
+  "bucket": 4,
+  "s1_entities_in_bucket": 95641,
+  "s1_entities_with_candidates": 95641,
+  "candidate_rows": 17658274,
+  "seconds": 46.2,
+  "peak_disk_used_gb": 23.9
+ },
+ {
+  "country": "India",
+  "step": "bucket",
+  "bucket": 5,
+  "s1_entities_in_bucket": 95748,
+  "s1_entities_with_candidates": 95748,
+  "candidate_rows": 17677187,
+  "seconds": 46.6,
+  "peak_disk_used_gb": 24.06
+ },
+ {
+  "country": "India",
+  "step": "bucket",
+  "bucket": 6,
+  "s1_entities_in_bucket": 95806,
+  "s1_entities_with_candidates": 95806,
+  "candidate_rows": 17722261,
+  "seconds": 46.5,
+  "peak_disk_used_gb": 24.22
+ },
+ {
+  "country": "India",
+  "step": "bucket",
+  "bucket": 7,
+  "s1_entities_in_bucket": 95313,
+  "s1_entities_with_candidates": 95313,
+  "candidate_rows": 17595699,
+  "seconds": 46.3,
+  "peak_disk_used_gb": 24.39
+ },
+ {
+  "country": "France",
+  "step": "token_tables",
+  "s23_token_rows": 2906442,
+  "s1_token_rows": 499200,
+  "seconds": 13.5,
+  "peak_disk_used_gb": 24.39
+ },
+ {
+  "country": "France",
+  "step": "bucket",
+  "bucket": 0,
+  "s1_entities_in_bucket": 31184,
+  "s1_entities_with_candidates": 31184,
+  "candidate_rows": 5642034,
+  "seconds": 8.9,
+  "peak_disk_used_gb": 24.44
+ },
+ {
+  "country": "France",
+  "step": "bucket",
+  "bucket": 1,
+  "s1_entities_in_bucket": 31533,
+  "s1_entities_with_candidates": 31533,
+  "candidate_rows": 5694876,
+  "seconds": 8.8,
+  "peak_disk_used_gb": 24.49
+ },
+ {
+  "country": "France",
+  "step": "bucket",
+  "bucket": 2,
+  "s1_entities_in_bucket": 31476,
+  "s1_entities_with_candidates": 31476,
+  "candidate_rows": 5676363,
+  "seconds": 9.3,
+  "peak_disk_used_gb": 24.54
+ },
+ {
+  "country": "France",
+  "step": "bucket",
+  "bucket": 3,
+  "s1_entities_in_bucket": 31236,
+  "s1_entities_with_candidates": 31236,
+  "candidate_rows": 5626052,
+  "seconds": 9.6,
+  "peak_disk_used_gb": 24.59
+ },
+ {
+  "country": "France",
+  "step": "bucket",
+  "bucket": 4,
+  "s1_entities_in_bucket": 31640,
+  "s1_entities_with_candidates": 31640,
+  "candidate_rows": 5707345,
+  "seconds": 9.9,
+  "peak_disk_used_gb": 24.65
+ },
+ {
+  "country": "France",
+  "step": "bucket",
+  "bucket": 5,
+  "s1_entities_in_bucket": 31666,
+  "s1_entities_with_candidates": 31666,
+  "candidate_rows": 5716215,
+  "seconds": 8.8,
+  "peak_disk_used_gb": 24.7
+ },
+ {
+  "country": "France",
+  "step": "bucket",
+  "bucket": 6,
+  "s1_entities_in_bucket": 31271,
+  "s1_entities_with_candidates": 31271,
+  "candidate_rows": 5645866,
+  "seconds": 9.3,
+  "peak_disk_used_gb": 24.75
+ },
+ {
+  "country": "France",
+  "step": "bucket",
+  "bucket": 7,
+  "s1_entities_in_bucket": 31466,
+  "s1_entities_with_candidates": 31466,
+  "candidate_rows": 5676155,
+  "seconds": 9.1,
+  "peak_disk_used_gb": 24.8
+ }
+]

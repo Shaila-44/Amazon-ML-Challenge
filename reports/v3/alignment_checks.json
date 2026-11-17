@@ -1,0 +1,18 @@
+{
+ "train": {
+  "candidates": 13702077,
+  "feature_rows": 13702077,
+  "key_checksum_match": true,
+  "shared_tokens_checksum_match": true,
+  "spot_checked": 2000,
+  "spot_check_max_abs_diff": 0.0
+ },
+ "val": {
+  "candidates": 8707272,
+  "feature_rows": 8707272,
+  "key_checksum_match": true,
+  "shared_tokens_checksum_match": true,
+  "spot_checked": 2000,
+  "spot_check_max_abs_diff": 0.0
+ }
+}

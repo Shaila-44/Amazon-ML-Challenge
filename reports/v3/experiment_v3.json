@@ -1,0 +1,34 @@
+{
+ "experiment": "v3",
+ "run_id": "v3-k200",
+ "registered_utc": "2026-09-26T01:46:40.203214+00:00",
+ "definition": "new blocking + K=200 + retrained model + corrected complete-ground-truth validation + independently tuned threshold",
+ "external_baseline_to_beat": {
+  "submission": 2,
+  "leaderboard_score": 0.653314,
+  "config": "v1 candidates/model, threshold 0.96"
+ },
+ "prior_submissions": "artifacts_v3/prior_submissions.json",
+ "changes_vs_v2": [
+  "blocking token selection: rarest tokens that survive the S2/S3 doc-frequency filter (v2: COALESCE(df,0) ranking, absent tokens counted as rarest)",
+  "blocking ranking: idf_same DESC, idf_all DESC, hash tie-break (v2: shared_tokens DESC, candidate_entity_id alphabetical)",
+  "K: 200 (v2: 50); candidate_rank stored so K=50/100 can be cut from the same candidate set",
+  "model: retrained on candidates from the new blocker; 8M deterministic hash-sampled negatives; fixed 50k-entity holdout excluded from training and TF-IDF fit",
+  "validation: all candidates of holdout entities, complete ground truth (blocked-away true matches = false negatives)",
+  "threshold: tuned on that validation (v2: 0.96 chosen on the phase-1 realistic holdout)"
+ ],
+ "unchanged_vs_v2": [
+  "features (12 columns)",
+  "LightGBM hyperparameters",
+  "no dedup",
+  "no Tamil/mixed-script romanization change"
+ ],
+ "decomposition_artifacts": {
+  "blocking_recall": "blocking_recall_train.csv, blocking_entity_loss_train.csv (full train, K=50/100/200)",
+  "candidate_quality_and_classifier": "val_k_decomposition.csv (v3 model vs v1 model on identical holdout candidates, K=50/100/200, at 0.96 and tuned)",
+  "threshold_selection": "threshold_sweep_val.csv, test_threshold_profile.csv",
+  "caveat": "v1 model likely saw holdout entities in training -> its holdout numbers are optimistic, so the retraining gain is a lower bound"
+ },
+ "output_record": "artifacts_v3/run_output_record.json (written at end of run)",
+ "leaderboard_score": null
+}

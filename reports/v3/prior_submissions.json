@@ -1,0 +1,157 @@
+{
+ "generated_utc": "2026-09-26T01:42:00.849340+00:00",
+ "source": "artifacts/submission_ledger.jsonl + immutable artifacts (read-only)",
+ "note": "v1 rebuild via make_submission.py at 0.65 matched the originally submitted file row-for-row (identical rows 1.000000). Ledger fields leaderboard_score/label for both entries were filled in on 2026-09-26 from scores reported by the user; the ledger is append-only from then on.",
+ "submissions": [
+  {
+   "submission_number": 1,
+   "artifact_version": "v1",
+   "produced_by": "original pipeline run (src.pipeline --resume)",
+   "threshold": 0.65,
+   "dedup": false,
+   "matching_results": "/home/ubuntu/amazon/output/matching_results.tsv",
+   "matching_results_md5": "82f2b9028624f48a45b1ae0434db005d",
+   "matching_results_mtime_utc": "2026-09-25T21:17:53.645553+00:00",
+   "leaderboard_score": 0.534834,
+   "submission_timestamp": "not recorded in ledger",
+   "submission_status": "scored",
+   "ledger_entry": {
+    "out": "/home/ubuntu/amazon/output_v1_rebuild/matching_results.tsv",
+    "threshold": 0.65,
+    "dedup": false,
+    "pairs": 6847098,
+    "frac_nonempty": 0.8562,
+    "mean_n_if_any": 4.616,
+    "records_claimed_by_multiple_s1": 367464,
+    "n_matches_hist": {
+     "0": 0.1438,
+     "1": 0.0762,
+     "2": 0.0942,
+     "3": 0.1263,
+     "4": 0.149,
+     "5": 0.1432,
+     "6": 0.1104,
+     "7": 0.07,
+     "8": 0.0387,
+     "9": 0.0193,
+     "10+": 0.0289
+    },
+    "by_country": {
+     "France": {
+      "frac_nonempty": 0.905,
+      "mean_n_if_any": 5.587
+     },
+     "India": {
+      "frac_nonempty": 0.8424,
+      "mean_n_if_any": 4.505
+     },
+     "US": {
+      "frac_nonempty": 0.8539,
+      "mean_n_if_any": 4.347
+     }
+    },
+    "by_source": {
+     "S2": 3845479,
+     "S3": 3001619
+    },
+    "leaderboard_score": 0.534834,
+    "label": "submission #1 (original run, rebuilt byte-identical)"
+   },
+   "candidate_generation": {
+    "code": "/home/ubuntu/amazon/code/src_v1_backup_0121/blocking.py",
+    "code_md5": "386307cfa8ab37673050b96514e31dad",
+    "generate_candidates_signature": "con: duckdb.DuckDBPyConnection, s1_parquet: str, s2_parquet: str, s3_parquet: str, top_k: int = 50, min_token_len: int = 2, max_doc_freq_frac: float = 0.02, max_doc_freq_abs: int = 1500, max_tokens_per_entity: int = 8,",
+    "ranking": "shared_tokens DESC, candidate_entity_id",
+    "token_selection": "8 rarest S1 tokens ranked by COALESCE(s23_df, 0)"
+   },
+   "K": 50,
+   "test_candidates": "/home/ubuntu/amazon/artifacts/test_candidates_v1.parquet",
+   "test_candidates_md5": "1107c07e94d9437a5e7c2c4935d514e3",
+   "test_candidate_pairs": 85150507,
+   "test_entities_with_candidates": 1719406,
+   "model": "/home/ubuntu/amazon/dataset/processed/_model_checkpoint.txt",
+   "model_md5": "96b11150addc3cc0a3badc73088618d8",
+   "model_mtime_utc": "2026-09-25T18:14:03.547845+00:00",
+   "vectorizer": "/home/ubuntu/amazon/dataset/processed/_vec_checkpoint.pkl",
+   "vectorizer_md5": "5ca17a2cffdfe6205dec04d2f9c2203b",
+   "model_run_threshold_checkpoint": "0.6499999999999999",
+   "test_scores": "/home/ubuntu/amazon/artifacts/test_scored_v1",
+   "model_run_id": "not recorded (no run id existed for v1)"
+  },
+  {
+   "submission_number": 2,
+   "artifact_version": "v2",
+   "produced_by": "make_submission.py on test_scored_v1",
+   "threshold": 0.96,
+   "dedup": false,
+   "matching_results": "/home/ubuntu/amazon/output_v2/matching_results.tsv",
+   "matching_results_md5": "06f1d96f782d6e12c93bcf8252af4960",
+   "matching_results_mtime_utc": "2026-09-26T00:15:08.233029+00:00",
+   "leaderboard_score": 0.653314,
+   "submission_timestamp": "not recorded in ledger",
+   "submission_status": "scored",
+   "ledger_entry": {
+    "out": "/home/ubuntu/amazon/output_v2/matching_results.tsv",
+    "threshold": 0.96,
+    "dedup": false,
+    "pairs": 4439910,
+    "frac_nonempty": 0.7967,
+    "mean_n_if_any": 3.217,
+    "records_claimed_by_multiple_s1": 50737,
+    "n_matches_hist": {
+     "0": 0.2033,
+     "1": 0.1353,
+     "2": 0.1669,
+     "3": 0.1775,
+     "4": 0.1457,
+     "5": 0.0934,
+     "6": 0.048,
+     "7": 0.02,
+     "8": 0.007,
+     "9": 0.0021,
+     "10+": 0.0008
+    },
+    "by_country": {
+     "France": {
+      "frac_nonempty": 0.7933,
+      "mean_n_if_any": 3.175
+     },
+     "India": {
+      "frac_nonempty": 0.7762,
+      "mean_n_if_any": 3.095
+     },
+     "US": {
+      "frac_nonempty": 0.8229,
+      "mean_n_if_any": 3.373
+     }
+    },
+    "by_source": {
+     "S2": 2371314,
+     "S3": 2068596
+    },
+    "leaderboard_score": 0.653314,
+    "label": "submission #2 (threshold only)"
+   },
+   "candidate_generation": {
+    "code": "/home/ubuntu/amazon/code/src_v1_backup_0121/blocking.py",
+    "code_md5": "386307cfa8ab37673050b96514e31dad",
+    "generate_candidates_signature": "con: duckdb.DuckDBPyConnection, s1_parquet: str, s2_parquet: str, s3_parquet: str, top_k: int = 50, min_token_len: int = 2, max_doc_freq_frac: float = 0.02, max_doc_freq_abs: int = 1500, max_tokens_per_entity: int = 8,",
+    "ranking": "shared_tokens DESC, candidate_entity_id",
+    "token_selection": "8 rarest S1 tokens ranked by COALESCE(s23_df, 0)"
+   },
+   "K": 50,
+   "test_candidates": "/home/ubuntu/amazon/artifacts/test_candidates_v1.parquet",
+   "test_candidates_md5": "1107c07e94d9437a5e7c2c4935d514e3",
+   "test_candidate_pairs": 85150507,
+   "test_entities_with_candidates": 1719406,
+   "model": "/home/ubuntu/amazon/dataset/processed/_model_checkpoint.txt",
+   "model_md5": "96b11150addc3cc0a3badc73088618d8",
+   "model_mtime_utc": "2026-09-25T18:14:03.547845+00:00",
+   "vectorizer": "/home/ubuntu/amazon/dataset/processed/_vec_checkpoint.pkl",
+   "vectorizer_md5": "5ca17a2cffdfe6205dec04d2f9c2203b",
+   "model_run_threshold_checkpoint": "0.6499999999999999",
+   "test_scores": "/home/ubuntu/amazon/artifacts/test_scored_v1",
+   "model_run_id": "not recorded (no run id existed for v1)"
+  }
+ ]
+}

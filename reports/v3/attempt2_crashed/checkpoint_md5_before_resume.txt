@@ -1,0 +1,4 @@
+5323cb63bf02a6189e7a182a4d7fa730  model.txt
+9b185eba3656e2a8aad8774a278b083f  threshold.txt
+5433a955de7d56cbe2a9da5313b10899  vec.pkl
+f61c2a0a664512f1a4ef015128c76ded  test_candidates.parquet

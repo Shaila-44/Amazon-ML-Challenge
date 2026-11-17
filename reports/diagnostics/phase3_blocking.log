@@ -1,0 +1,58 @@
+[14s] India: token tables ready
+[16s] India T0: 24375425 uncapped pairs
+[18s] India T1: 20986291 uncapped pairs
+[20s] India T2: 21057010 uncapped pairs
+[34s] US: token tables ready
+[36s] US T0: 28283014 uncapped pairs
+[39s] US T1: 24271164 uncapped pairs
+[41s] US T2: 24271164 uncapped pairs
+
+holdout truth pairs by source: {'S3': 71359, 'S2': 67007}
+[78s] T0 rankings done
+[109s] T1 rankings done
+[140s] T2 rankings done
+
+===== RECALL BY TOKEN SELECTION x RANKING x SOURCE =====
+tokens     ranking src  recall_at50  recall_at100  recall_at200  recall_uncapped  cand_slots_at50
+    T0 count_alpha  S2       0.6663        0.7091        0.7617           0.8729          1714175
+    T0 count_alpha  S3       0.5794        0.6021        0.6348           0.8661           236428
+    T0  count_hash  S2       0.6373        0.6686        0.7102           0.8729           972553
+    T0  count_hash  S3       0.6084        0.6428        0.6866           0.8661           978050
+    T0         idf  S2       0.6620        0.6984        0.7399           0.8729           972628
+    T0         idf  S3       0.6370        0.6767        0.7219           0.8661           977975
+    T0    idf_same  S2       0.6936        0.7311        0.7742           0.8729           971987
+    T0    idf_same  S3       0.6706        0.7111        0.7568           0.8661           978616
+    T1 count_alpha  S2       0.6937        0.7360        0.7844           0.8729          1595288
+    T1 count_alpha  S3       0.6017        0.6316        0.6688           0.8661           236256
+    T1  count_hash  S2       0.6616        0.6963        0.7384           0.8729           915241
+    T1  count_hash  S3       0.6347        0.6718        0.7155           0.8661           916303
+    T1         idf  S2       0.6768        0.7169        0.7604           0.8729           913373
+    T1         idf  S3       0.6533        0.6962        0.7421           0.8661           918171
+    T1    idf_same  S2       0.6936        0.7311        0.7742           0.8729           913554
+    T1    idf_same  S3       0.6706        0.7111        0.7568           0.8661           917990
+    T2 count_alpha  S2       0.6937        0.7360        0.7844           0.8729          1595191
+    T2 count_alpha  S3       0.6018        0.6317        0.6689           0.8661           236353
+    T2  count_hash  S2       0.6617        0.6963        0.7384           0.8729           915256
+    T2  count_hash  S3       0.6348        0.6719        0.7155           0.8661           916288
+    T2         idf  S2       0.6768        0.7170        0.7604           0.8729           913336
+    T2         idf  S3       0.6534        0.6962        0.7422           0.8661           918208
+    T2    idf_same  S2       0.6936        0.7311        0.7742           0.8729           913543
+    T2    idf_same  S3       0.6707        0.7112        0.7569           0.8661           918001
+/home/ubuntu/amazon/phase3_blocking.py:126: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  tot = res.groupby(["tokens", "ranking"]).apply(
+
+===== OVERALL (S2+S3) =====
+tokens     ranking  recall_at50  recall_at100  recall_at200  recall_uncapped
+    T2    idf_same       0.6818        0.7208        0.7653           0.8694
+    T1    idf_same       0.6817        0.7208        0.7653           0.8694
+    T0    idf_same       0.6817        0.7208        0.7653           0.8694
+    T2         idf       0.6647        0.7063        0.7510           0.8694
+    T1         idf       0.6647        0.7062        0.7510           0.8694
+    T0         idf       0.6491        0.6872        0.7306           0.8694
+    T2  count_hash       0.6478        0.6837        0.7266           0.8694
+    T1  count_hash       0.6477        0.6836        0.7266           0.8694
+    T2 count_alpha       0.6463        0.6822        0.7248           0.8694
+    T1 count_alpha       0.6462        0.6822        0.7248           0.8694
+    T0  count_hash       0.6224        0.6553        0.6980           0.8694
+    T0 count_alpha       0.6215        0.6539        0.6962           0.8694
+[140s] done

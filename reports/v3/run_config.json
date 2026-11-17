@@ -1,0 +1,44 @@
+{
+ "run_id": "v3-k200-attempt3",
+ "started_utc": "2026-09-26T04:17:14.991297+00:00",
+ "processed_dir": "/home/ubuntu/amazon/dataset/processed",
+ "train_gt": "/home/ubuntu/amazon/dataset_meta/train_ground_truth.tsv",
+ "test_s1": "/home/ubuntu/amazon/dataset_meta/test_source1.tsv",
+ "out_dir": "/home/ubuntu/amazon/output_v3",
+ "artifacts_dir": "/home/ubuntu/amazon/artifacts_v3",
+ "top_k": 200,
+ "max_train_negatives": 8000000,
+ "n_val_entities": 50000,
+ "memory_limit_gb": 46,
+ "workers": 8,
+ "seeds": {
+  "holdout": "solaris-val-v2",
+  "negatives": "solaris-neg-v2",
+  "tfidf_sample": "solaris-tfidf-v2",
+  "lightgbm": 42
+ },
+ "blocking_config": {
+  "top_k": 200,
+  "min_token_len": 2,
+  "max_doc_freq_frac": 0.02,
+  "max_doc_freq_abs": 1500,
+  "max_tokens_per_entity": 8,
+  "n_buckets": 8,
+  "token_selection": "rarest tokens that survive the S2/S3 doc-frequency filter",
+  "ranking": "idf_same DESC, idf_all DESC, hash(candidate_entity_id)"
+ },
+ "baseline_model": "/home/ubuntu/amazon/dataset/processed/_model_checkpoint.txt",
+ "baseline_vec": "/home/ubuntu/amazon/dataset/processed/_vec_checkpoint.pkl",
+ "code_md5": {
+  "__init__.py": "d41d8cd98f00b204e9800998ecf8427e",
+  "blocking.py": "3845e8bcb4d155358ea6f0d545236ff9",
+  "diagnostics.py": "0cf81ee5223ae2d06daf4b28ef5f63be",
+  "features.py": "06aabf89cffdc90ee0f2d5128507dd1c",
+  "matching.py": "ffb947438518418a8fac5a8722ed3c8d",
+  "normalize.py": "d82537893aa80ba89fbf802be4f9d5f4",
+  "parallel_features.py": "70b129af4f6eb3ed0a9407c85788bc0a",
+  "pipeline.py": "5172f335909d7949077e43e926d4070a",
+  "preprocess.py": "7702278af7c65ef42e975f5e3b5b2650",
+  "scoring.py": "77809ed2ff1526a0753ac0ab8f81f172"
+ }
+}

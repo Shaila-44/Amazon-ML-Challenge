@@ -1,0 +1,1857 @@
+{
+ "train": {
+  "reference_profile": {
+   "rows": 1753191,
+   "entities": 9458,
+   "checksum": "16164594983580118330408796",
+   "by_source": {
+    "S2": 872164,
+    "S3": 881027
+   },
+   "max_per_entity": 200,
+   "entities_with_dup_pairs": 0,
+   "entities_with_rank_gaps": 0,
+   "k_behaviour_ok": true
+  },
+  "runs": {
+   "unbucketed": {
+    "n_buckets": 1,
+    "threads": "default",
+    "seconds": 57.7,
+    "profile": {
+     "rows": 1753191,
+     "entities": 9458,
+     "checksum": "16164482013554029028250841",
+     "by_source": {
+      "S2": 872169,
+      "S3": 881022
+     },
+     "max_per_entity": 200,
+     "entities_with_dup_pairs": 0,
+     "entities_with_rank_gaps": 0,
+     "k_behaviour_ok": true
+    },
+    "vs_reference_informational": {
+     "rows_only_in_first": 4742,
+     "rows_only_in_second": 4742,
+     "pairs_only_in_first": 16,
+     "pairs_only_in_second": 16,
+     "identical": false
+    },
+    "bucket_stats": [
+     {
+      "country": "US",
+      "step": "token_tables",
+      "s23_token_rows": 14095478,
+      "s1_token_rows": 12486,
+      "seconds": 26.9,
+      "peak_disk_used_gb": 13.18
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 5678,
+      "s1_entities_with_candidates": 5678,
+      "candidate_rows": 1052358,
+      "seconds": 2.1,
+      "peak_disk_used_gb": 13.19
+     },
+     {
+      "country": "India",
+      "step": "token_tables",
+      "s23_token_rows": 11876930,
+      "s1_token_rows": 11829,
+      "seconds": 26.5,
+      "peak_disk_used_gb": 13.19
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 3780,
+      "s1_entities_with_candidates": 3780,
+      "candidate_rows": 700833,
+      "seconds": 1.9,
+      "peak_disk_used_gb": 13.2
+     }
+    ]
+   },
+   "b8_run1": {
+    "n_buckets": 8,
+    "threads": "default",
+    "seconds": 61.5,
+    "profile": {
+     "rows": 1753191,
+     "entities": 9458,
+     "checksum": "16164482013554029028250841",
+     "by_source": {
+      "S2": 872169,
+      "S3": 881022
+     },
+     "max_per_entity": 200,
+     "entities_with_dup_pairs": 0,
+     "entities_with_rank_gaps": 0,
+     "k_behaviour_ok": true
+    },
+    "vs_reference_informational": {
+     "rows_only_in_first": 4742,
+     "rows_only_in_second": 4742,
+     "pairs_only_in_first": 16,
+     "pairs_only_in_second": 16,
+     "identical": false
+    },
+    "bucket_stats": [
+     {
+      "country": "US",
+      "step": "token_tables",
+      "s23_token_rows": 14095478,
+      "s1_token_rows": 12486,
+      "seconds": 28.5,
+      "peak_disk_used_gb": 13.21
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 700,
+      "s1_entities_with_candidates": 700,
+      "candidate_rows": 129278,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.21
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 687,
+      "s1_entities_with_candidates": 687,
+      "candidate_rows": 127958,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.21
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 717,
+      "s1_entities_with_candidates": 717,
+      "candidate_rows": 131947,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.22
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 724,
+      "s1_entities_with_candidates": 724,
+      "candidate_rows": 133341,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.22
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 707,
+      "s1_entities_with_candidates": 707,
+      "candidate_rows": 131271,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.22
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 759,
+      "s1_entities_with_candidates": 759,
+      "candidate_rows": 143033,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.22
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 710,
+      "s1_entities_with_candidates": 710,
+      "candidate_rows": 131312,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.22
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 674,
+      "s1_entities_with_candidates": 674,
+      "candidate_rows": 124218,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.22
+     },
+     {
+      "country": "India",
+      "step": "token_tables",
+      "s23_token_rows": 11876930,
+      "s1_token_rows": 11829,
+      "seconds": 27.1,
+      "peak_disk_used_gb": 13.22
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 492,
+      "s1_entities_with_candidates": 492,
+      "candidate_rows": 90468,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.22
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 489,
+      "s1_entities_with_candidates": 489,
+      "candidate_rows": 90035,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.22
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 490,
+      "s1_entities_with_candidates": 490,
+      "candidate_rows": 91284,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.22
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 457,
+      "s1_entities_with_candidates": 457,
+      "candidate_rows": 86142,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.23
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 464,
+      "s1_entities_with_candidates": 464,
+      "candidate_rows": 85881,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.23
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 461,
+      "s1_entities_with_candidates": 461,
+      "candidate_rows": 86705,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.23
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 463,
+      "s1_entities_with_candidates": 463,
+      "candidate_rows": 85603,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.23
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 464,
+      "s1_entities_with_candidates": 464,
+      "candidate_rows": 84715,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.23
+     }
+    ]
+   },
+   "b8_run2": {
+    "n_buckets": 8,
+    "threads": "default",
+    "seconds": 62.4,
+    "profile": {
+     "rows": 1753191,
+     "entities": 9458,
+     "checksum": "16164482013554029028250841",
+     "by_source": {
+      "S2": 872169,
+      "S3": 881022
+     },
+     "max_per_entity": 200,
+     "entities_with_dup_pairs": 0,
+     "entities_with_rank_gaps": 0,
+     "k_behaviour_ok": true
+    },
+    "vs_reference_informational": {
+     "rows_only_in_first": 4742,
+     "rows_only_in_second": 4742,
+     "pairs_only_in_first": 16,
+     "pairs_only_in_second": 16,
+     "identical": false
+    },
+    "bucket_stats": [
+     {
+      "country": "US",
+      "step": "token_tables",
+      "s23_token_rows": 14095478,
+      "s1_token_rows": 12486,
+      "seconds": 28.9,
+      "peak_disk_used_gb": 13.24
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 700,
+      "s1_entities_with_candidates": 700,
+      "candidate_rows": 129278,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.25
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 687,
+      "s1_entities_with_candidates": 687,
+      "candidate_rows": 127958,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.25
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 717,
+      "s1_entities_with_candidates": 717,
+      "candidate_rows": 131947,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.25
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 724,
+      "s1_entities_with_candidates": 724,
+      "candidate_rows": 133341,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.25
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 707,
+      "s1_entities_with_candidates": 707,
+      "candidate_rows": 131271,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.25
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 759,
+      "s1_entities_with_candidates": 759,
+      "candidate_rows": 143033,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.25
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 710,
+      "s1_entities_with_candidates": 710,
+      "candidate_rows": 131312,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.25
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 674,
+      "s1_entities_with_candidates": 674,
+      "candidate_rows": 124218,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.25
+     },
+     {
+      "country": "India",
+      "step": "token_tables",
+      "s23_token_rows": 11876930,
+      "s1_token_rows": 11829,
+      "seconds": 27.6,
+      "peak_disk_used_gb": 13.25
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 492,
+      "s1_entities_with_candidates": 492,
+      "candidate_rows": 90468,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.25
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 489,
+      "s1_entities_with_candidates": 489,
+      "candidate_rows": 90035,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.26
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 490,
+      "s1_entities_with_candidates": 490,
+      "candidate_rows": 91284,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.26
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 457,
+      "s1_entities_with_candidates": 457,
+      "candidate_rows": 86142,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.26
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 464,
+      "s1_entities_with_candidates": 464,
+      "candidate_rows": 85881,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.26
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 461,
+      "s1_entities_with_candidates": 461,
+      "candidate_rows": 86705,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.26
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 463,
+      "s1_entities_with_candidates": 463,
+      "candidate_rows": 85603,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.26
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 464,
+      "s1_entities_with_candidates": 464,
+      "candidate_rows": 84715,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.26
+     }
+    ]
+   },
+   "b8_threads3": {
+    "n_buckets": 8,
+    "threads": 3,
+    "seconds": 102.6,
+    "profile": {
+     "rows": 1753191,
+     "entities": 9458,
+     "checksum": "16164482013554029028250841",
+     "by_source": {
+      "S2": 872169,
+      "S3": 881022
+     },
+     "max_per_entity": 200,
+     "entities_with_dup_pairs": 0,
+     "entities_with_rank_gaps": 0,
+     "k_behaviour_ok": true
+    },
+    "vs_reference_informational": {
+     "rows_only_in_first": 4742,
+     "rows_only_in_second": 4742,
+     "pairs_only_in_first": 16,
+     "pairs_only_in_second": 16,
+     "identical": false
+    },
+    "bucket_stats": [
+     {
+      "country": "US",
+      "step": "token_tables",
+      "s23_token_rows": 14095478,
+      "s1_token_rows": 12486,
+      "seconds": 46.3,
+      "peak_disk_used_gb": 13.28
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 700,
+      "s1_entities_with_candidates": 700,
+      "candidate_rows": 129278,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.28
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 687,
+      "s1_entities_with_candidates": 687,
+      "candidate_rows": 127958,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.28
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 717,
+      "s1_entities_with_candidates": 717,
+      "candidate_rows": 131947,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.28
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 724,
+      "s1_entities_with_candidates": 724,
+      "candidate_rows": 133341,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.28
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 707,
+      "s1_entities_with_candidates": 707,
+      "candidate_rows": 131271,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.28
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 759,
+      "s1_entities_with_candidates": 759,
+      "candidate_rows": 143033,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.28
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 710,
+      "s1_entities_with_candidates": 710,
+      "candidate_rows": 131312,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.29
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 674,
+      "s1_entities_with_candidates": 674,
+      "candidate_rows": 124218,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.29
+     },
+     {
+      "country": "India",
+      "step": "token_tables",
+      "s23_token_rows": 11876930,
+      "s1_token_rows": 11829,
+      "seconds": 46.9,
+      "peak_disk_used_gb": 13.29
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 492,
+      "s1_entities_with_candidates": 492,
+      "candidate_rows": 90468,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.29
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 489,
+      "s1_entities_with_candidates": 489,
+      "candidate_rows": 90035,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.29
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 490,
+      "s1_entities_with_candidates": 490,
+      "candidate_rows": 91284,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.29
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 457,
+      "s1_entities_with_candidates": 457,
+      "candidate_rows": 86142,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.29
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 464,
+      "s1_entities_with_candidates": 464,
+      "candidate_rows": 85881,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.29
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 461,
+      "s1_entities_with_candidates": 461,
+      "candidate_rows": 86705,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.29
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 463,
+      "s1_entities_with_candidates": 463,
+      "candidate_rows": 85603,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.29
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 464,
+      "s1_entities_with_candidates": 464,
+      "candidate_rows": 84715,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.29
+     }
+    ]
+   }
+  },
+  "b8_run1_vs_b8_run2": {
+   "rows_only_in_first": 0,
+   "rows_only_in_second": 0,
+   "pairs_only_in_first": 0,
+   "pairs_only_in_second": 0,
+   "identical": true
+  },
+  "b8_run1_vs_b8_threads3": {
+   "rows_only_in_first": 0,
+   "rows_only_in_second": 0,
+   "pairs_only_in_first": 0,
+   "pairs_only_in_second": 0,
+   "identical": true
+  },
+  "b8_run1_vs_unbucketed": {
+   "rows_only_in_first": 0,
+   "rows_only_in_second": 0,
+   "pairs_only_in_first": 0,
+   "pairs_only_in_second": 0,
+   "identical": true
+  },
+  "recall_bucketed": [
+   {
+    "country": "ALL",
+    "src": "ALL",
+    "n_true": 34763,
+    "k50": 0.6854989500330811,
+    "k100": 0.7256565889019935,
+    "k200": 0.7692949400224377
+   },
+   {
+    "country": "ALL",
+    "src": "S2",
+    "n_true": 16813,
+    "k50": 0.6982097186700768,
+    "k100": 0.7346696009040623,
+    "k200": 0.7774341283530601
+   },
+   {
+    "country": "ALL",
+    "src": "S3",
+    "n_true": 17950,
+    "k50": 0.6735933147632311,
+    "k100": 0.7172144846796658,
+    "k200": 0.7616713091922006
+   },
+   {
+    "country": "India",
+    "src": "ALL",
+    "n_true": 13872,
+    "k50": 0.739475201845444,
+    "k100": 0.7714100346020761,
+    "k200": 0.8041378316032295
+   },
+   {
+    "country": "India",
+    "src": "S2",
+    "n_true": 6666,
+    "k50": 0.7712271227122712,
+    "k100": 0.7970297029702971,
+    "k200": 0.8261326132613261
+   },
+   {
+    "country": "India",
+    "src": "S3",
+    "n_true": 7206,
+    "k50": 0.7101026922009437,
+    "k100": 0.7477102414654455,
+    "k200": 0.7837912850402442
+   },
+   {
+    "country": "US",
+    "src": "ALL",
+    "n_true": 20891,
+    "k50": 0.6496577473553204,
+    "k100": 0.69527547747834,
+    "k200": 0.7461586329041214
+   },
+   {
+    "country": "US",
+    "src": "S2",
+    "n_true": 10147,
+    "k50": 0.6502414506750763,
+    "k100": 0.6937025721888243,
+    "k200": 0.7454420025623337
+   },
+   {
+    "country": "US",
+    "src": "S3",
+    "n_true": 10744,
+    "k50": 0.6491064780342517,
+    "k100": 0.6967609828741623,
+    "k200": 0.7468354430379747
+   }
+  ],
+  "recall_delta_vs_reference_informational": [
+   {
+    "country": "ALL",
+    "src": "ALL",
+    "k50": -2.876621695480086e-05,
+    "k100": 0.0,
+    "k200": 0.0
+   },
+   {
+    "country": "ALL",
+    "src": "S2",
+    "k50": -5.94777850472239e-05,
+    "k100": 0.0,
+    "k200": 0.0
+   },
+   {
+    "country": "ALL",
+    "src": "S3",
+    "k50": 0.0,
+    "k100": 0.0,
+    "k200": 0.0
+   },
+   {
+    "country": "India",
+    "src": "ALL",
+    "k50": -7.20876585929009e-05,
+    "k100": 0.0,
+    "k200": 0.0
+   },
+   {
+    "country": "India",
+    "src": "S2",
+    "k50": -0.0001500150015001367,
+    "k100": 0.0,
+    "k200": 0.0
+   },
+   {
+    "country": "India",
+    "src": "S3",
+    "k50": 0.0,
+    "k100": 0.0,
+    "k200": 0.0
+   },
+   {
+    "country": "US",
+    "src": "ALL",
+    "k50": 0.0,
+    "k100": 0.0,
+    "k200": 0.0
+   },
+   {
+    "country": "US",
+    "src": "S2",
+    "k50": 0.0,
+    "k100": 0.0,
+    "k200": 0.0
+   },
+   {
+    "country": "US",
+    "src": "S3",
+    "k50": 0.0,
+    "k100": 0.0,
+    "k200": 0.0
+   }
+  ]
+ },
+ "test": {
+  "reference_profile": {
+   "rows": 1795876,
+   "entities": 9618,
+   "checksum": "16575907738916570559026340",
+   "by_source": {
+    "S2": 902493,
+    "S3": 893383
+   },
+   "max_per_entity": 200,
+   "entities_with_dup_pairs": 0,
+   "entities_with_rank_gaps": 0,
+   "k_behaviour_ok": true
+  },
+  "runs": {
+   "unbucketed": {
+    "n_buckets": 1,
+    "threads": "default",
+    "seconds": 67.9,
+    "profile": {
+     "rows": 1795876,
+     "entities": 9618,
+     "checksum": "16576011893166198767212127",
+     "by_source": {
+      "S2": 902487,
+      "S3": 893389
+     },
+     "max_per_entity": 200,
+     "entities_with_dup_pairs": 0,
+     "entities_with_rank_gaps": 0,
+     "k_behaviour_ok": true
+    },
+    "vs_reference_informational": {
+     "rows_only_in_first": 6645,
+     "rows_only_in_second": 6645,
+     "pairs_only_in_first": 33,
+     "pairs_only_in_second": 33,
+     "identical": false
+    },
+    "bucket_stats": [
+     {
+      "country": "India",
+      "step": "token_tables",
+      "s23_token_rows": 13031591,
+      "s1_token_rows": 13512,
+      "seconds": 30.6,
+      "peak_disk_used_gb": 13.31
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 4504,
+      "s1_entities_with_candidates": 4504,
+      "candidate_rows": 833515,
+      "seconds": 2.2,
+      "peak_disk_used_gb": 13.32
+     },
+     {
+      "country": "US",
+      "step": "token_tables",
+      "s23_token_rows": 10997863,
+      "s1_token_rows": 10323,
+      "seconds": 20.6,
+      "peak_disk_used_gb": 13.32
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 3670,
+      "s1_entities_with_candidates": 3670,
+      "candidate_rows": 701503,
+      "seconds": 2.0,
+      "peak_disk_used_gb": 13.32
+     },
+     {
+      "country": "France",
+      "step": "token_tables",
+      "s23_token_rows": 2906442,
+      "s1_token_rows": 2839,
+      "seconds": 11.8,
+      "peak_disk_used_gb": 13.32
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 1444,
+      "s1_entities_with_candidates": 1444,
+      "candidate_rows": 260858,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.33
+     }
+    ]
+   },
+   "b8_run1": {
+    "n_buckets": 8,
+    "threads": "default",
+    "seconds": 69.8,
+    "profile": {
+     "rows": 1795876,
+     "entities": 9618,
+     "checksum": "16576011893166198767212127",
+     "by_source": {
+      "S2": 902487,
+      "S3": 893389
+     },
+     "max_per_entity": 200,
+     "entities_with_dup_pairs": 0,
+     "entities_with_rank_gaps": 0,
+     "k_behaviour_ok": true
+    },
+    "vs_reference_informational": {
+     "rows_only_in_first": 6645,
+     "rows_only_in_second": 6645,
+     "pairs_only_in_first": 33,
+     "pairs_only_in_second": 33,
+     "identical": false
+    },
+    "bucket_stats": [
+     {
+      "country": "India",
+      "step": "token_tables",
+      "s23_token_rows": 13031591,
+      "s1_token_rows": 13512,
+      "seconds": 30.6,
+      "peak_disk_used_gb": 13.34
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 565,
+      "s1_entities_with_candidates": 565,
+      "candidate_rows": 104669,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.34
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 553,
+      "s1_entities_with_candidates": 553,
+      "candidate_rows": 102208,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.34
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 582,
+      "s1_entities_with_candidates": 582,
+      "candidate_rows": 108623,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 545,
+      "s1_entities_with_candidates": 545,
+      "candidate_rows": 99057,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 512,
+      "s1_entities_with_candidates": 512,
+      "candidate_rows": 96132,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 586,
+      "s1_entities_with_candidates": 586,
+      "candidate_rows": 108925,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 581,
+      "s1_entities_with_candidates": 581,
+      "candidate_rows": 106840,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 580,
+      "s1_entities_with_candidates": 580,
+      "candidate_rows": 107061,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "US",
+      "step": "token_tables",
+      "s23_token_rows": 10997863,
+      "s1_token_rows": 10323,
+      "seconds": 20.7,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 453,
+      "s1_entities_with_candidates": 453,
+      "candidate_rows": 86767,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 451,
+      "s1_entities_with_candidates": 451,
+      "candidate_rows": 86387,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 511,
+      "s1_entities_with_candidates": 511,
+      "candidate_rows": 98329,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 473,
+      "s1_entities_with_candidates": 473,
+      "candidate_rows": 90219,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 444,
+      "s1_entities_with_candidates": 444,
+      "candidate_rows": 85273,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 471,
+      "s1_entities_with_candidates": 471,
+      "candidate_rows": 89806,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.35
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 424,
+      "s1_entities_with_candidates": 424,
+      "candidate_rows": 80234,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.36
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 443,
+      "s1_entities_with_candidates": 443,
+      "candidate_rows": 84488,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.36
+     },
+     {
+      "country": "France",
+      "step": "token_tables",
+      "s23_token_rows": 2906442,
+      "s1_token_rows": 2839,
+      "seconds": 11.8,
+      "peak_disk_used_gb": 13.36
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 186,
+      "s1_entities_with_candidates": 186,
+      "candidate_rows": 32799,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.36
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 157,
+      "s1_entities_with_candidates": 157,
+      "candidate_rows": 29540,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.36
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 181,
+      "s1_entities_with_candidates": 181,
+      "candidate_rows": 33066,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.36
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 175,
+      "s1_entities_with_candidates": 175,
+      "candidate_rows": 31969,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.36
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 183,
+      "s1_entities_with_candidates": 183,
+      "candidate_rows": 32433,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.36
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 184,
+      "s1_entities_with_candidates": 184,
+      "candidate_rows": 33753,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.36
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 209,
+      "s1_entities_with_candidates": 209,
+      "candidate_rows": 37714,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.36
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 169,
+      "s1_entities_with_candidates": 169,
+      "candidate_rows": 29584,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.36
+     }
+    ]
+   },
+   "b8_run2": {
+    "n_buckets": 8,
+    "threads": "default",
+    "seconds": 70.1,
+    "profile": {
+     "rows": 1795876,
+     "entities": 9618,
+     "checksum": "16576011893166198767212127",
+     "by_source": {
+      "S2": 902487,
+      "S3": 893389
+     },
+     "max_per_entity": 200,
+     "entities_with_dup_pairs": 0,
+     "entities_with_rank_gaps": 0,
+     "k_behaviour_ok": true
+    },
+    "vs_reference_informational": {
+     "rows_only_in_first": 6645,
+     "rows_only_in_second": 6645,
+     "pairs_only_in_first": 33,
+     "pairs_only_in_second": 33,
+     "identical": false
+    },
+    "bucket_stats": [
+     {
+      "country": "India",
+      "step": "token_tables",
+      "s23_token_rows": 13031591,
+      "s1_token_rows": 13512,
+      "seconds": 30.6,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 565,
+      "s1_entities_with_candidates": 565,
+      "candidate_rows": 104669,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 553,
+      "s1_entities_with_candidates": 553,
+      "candidate_rows": 102208,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 582,
+      "s1_entities_with_candidates": 582,
+      "candidate_rows": 108623,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 545,
+      "s1_entities_with_candidates": 545,
+      "candidate_rows": 99057,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 512,
+      "s1_entities_with_candidates": 512,
+      "candidate_rows": 96132,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 586,
+      "s1_entities_with_candidates": 586,
+      "candidate_rows": 108925,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 581,
+      "s1_entities_with_candidates": 581,
+      "candidate_rows": 106840,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 580,
+      "s1_entities_with_candidates": 580,
+      "candidate_rows": 107061,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "France",
+      "step": "token_tables",
+      "s23_token_rows": 2906442,
+      "s1_token_rows": 2839,
+      "seconds": 11.8,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 186,
+      "s1_entities_with_candidates": 186,
+      "candidate_rows": 32799,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 157,
+      "s1_entities_with_candidates": 157,
+      "candidate_rows": 29540,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 181,
+      "s1_entities_with_candidates": 181,
+      "candidate_rows": 33066,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 175,
+      "s1_entities_with_candidates": 175,
+      "candidate_rows": 31969,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 183,
+      "s1_entities_with_candidates": 183,
+      "candidate_rows": 32433,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 184,
+      "s1_entities_with_candidates": 184,
+      "candidate_rows": 33753,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.38
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 209,
+      "s1_entities_with_candidates": 209,
+      "candidate_rows": 37714,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.39
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 169,
+      "s1_entities_with_candidates": 169,
+      "candidate_rows": 29584,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.39
+     },
+     {
+      "country": "US",
+      "step": "token_tables",
+      "s23_token_rows": 10997863,
+      "s1_token_rows": 10323,
+      "seconds": 20.9,
+      "peak_disk_used_gb": 13.39
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 453,
+      "s1_entities_with_candidates": 453,
+      "candidate_rows": 86767,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.39
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 451,
+      "s1_entities_with_candidates": 451,
+      "candidate_rows": 86387,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.39
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 511,
+      "s1_entities_with_candidates": 511,
+      "candidate_rows": 98329,
+      "seconds": 0.4,
+      "peak_disk_used_gb": 13.39
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 473,
+      "s1_entities_with_candidates": 473,
+      "candidate_rows": 90219,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.39
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 444,
+      "s1_entities_with_candidates": 444,
+      "candidate_rows": 85273,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.39
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 471,
+      "s1_entities_with_candidates": 471,
+      "candidate_rows": 89806,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.39
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 424,
+      "s1_entities_with_candidates": 424,
+      "candidate_rows": 80234,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.39
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 443,
+      "s1_entities_with_candidates": 443,
+      "candidate_rows": 84488,
+      "seconds": 0.3,
+      "peak_disk_used_gb": 13.39
+     }
+    ]
+   },
+   "b8_threads3": {
+    "n_buckets": 8,
+    "threads": 3,
+    "seconds": 115.0,
+    "profile": {
+     "rows": 1795876,
+     "entities": 9618,
+     "checksum": "16576011893166198767212127",
+     "by_source": {
+      "S2": 902487,
+      "S3": 893389
+     },
+     "max_per_entity": 200,
+     "entities_with_dup_pairs": 0,
+     "entities_with_rank_gaps": 0,
+     "k_behaviour_ok": true
+    },
+    "vs_reference_informational": {
+     "rows_only_in_first": 6645,
+     "rows_only_in_second": 6645,
+     "pairs_only_in_first": 33,
+     "pairs_only_in_second": 33,
+     "identical": false
+    },
+    "bucket_stats": [
+     {
+      "country": "India",
+      "step": "token_tables",
+      "s23_token_rows": 13031591,
+      "s1_token_rows": 13512,
+      "seconds": 51.5,
+      "peak_disk_used_gb": 13.41
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 565,
+      "s1_entities_with_candidates": 565,
+      "candidate_rows": 104669,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.41
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 553,
+      "s1_entities_with_candidates": 553,
+      "candidate_rows": 102208,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.41
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 582,
+      "s1_entities_with_candidates": 582,
+      "candidate_rows": 108623,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.41
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 545,
+      "s1_entities_with_candidates": 545,
+      "candidate_rows": 99057,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.41
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 512,
+      "s1_entities_with_candidates": 512,
+      "candidate_rows": 96132,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.41
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 586,
+      "s1_entities_with_candidates": 586,
+      "candidate_rows": 108925,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.41
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 581,
+      "s1_entities_with_candidates": 581,
+      "candidate_rows": 106840,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "India",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 580,
+      "s1_entities_with_candidates": 580,
+      "candidate_rows": 107061,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "France",
+      "step": "token_tables",
+      "s23_token_rows": 2906442,
+      "s1_token_rows": 2839,
+      "seconds": 18.9,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 186,
+      "s1_entities_with_candidates": 186,
+      "candidate_rows": 32799,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 157,
+      "s1_entities_with_candidates": 157,
+      "candidate_rows": 29540,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 181,
+      "s1_entities_with_candidates": 181,
+      "candidate_rows": 33066,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 175,
+      "s1_entities_with_candidates": 175,
+      "candidate_rows": 31969,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 183,
+      "s1_entities_with_candidates": 183,
+      "candidate_rows": 32433,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 184,
+      "s1_entities_with_candidates": 184,
+      "candidate_rows": 33753,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 209,
+      "s1_entities_with_candidates": 209,
+      "candidate_rows": 37714,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "France",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 169,
+      "s1_entities_with_candidates": 169,
+      "candidate_rows": 29584,
+      "seconds": 0.1,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "US",
+      "step": "token_tables",
+      "s23_token_rows": 10997863,
+      "s1_token_rows": 10323,
+      "seconds": 34.1,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 0,
+      "s1_entities_in_bucket": 453,
+      "s1_entities_with_candidates": 453,
+      "candidate_rows": 86767,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 1,
+      "s1_entities_in_bucket": 451,
+      "s1_entities_with_candidates": 451,
+      "candidate_rows": 86387,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 2,
+      "s1_entities_in_bucket": 511,
+      "s1_entities_with_candidates": 511,
+      "candidate_rows": 98329,
+      "seconds": 0.6,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 3,
+      "s1_entities_in_bucket": 473,
+      "s1_entities_with_candidates": 473,
+      "candidate_rows": 90219,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 4,
+      "s1_entities_in_bucket": 444,
+      "s1_entities_with_candidates": 444,
+      "candidate_rows": 85273,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 5,
+      "s1_entities_in_bucket": 471,
+      "s1_entities_with_candidates": 471,
+      "candidate_rows": 89806,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 6,
+      "s1_entities_in_bucket": 424,
+      "s1_entities_with_candidates": 424,
+      "candidate_rows": 80234,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.42
+     },
+     {
+      "country": "US",
+      "step": "bucket",
+      "bucket": 7,
+      "s1_entities_in_bucket": 443,
+      "s1_entities_with_candidates": 443,
+      "candidate_rows": 84488,
+      "seconds": 0.5,
+      "peak_disk_used_gb": 13.43
+     }
+    ]
+   }
+  },
+  "b8_run1_vs_b8_run2": {
+   "rows_only_in_first": 0,
+   "rows_only_in_second": 0,
+   "pairs_only_in_first": 0,
+   "pairs_only_in_second": 0,
+   "identical": true
+  },
+  "b8_run1_vs_b8_threads3": {
+   "rows_only_in_first": 0,
+   "rows_only_in_second": 0,
+   "pairs_only_in_first": 0,
+   "pairs_only_in_second": 0,
+   "identical": true
+  },
+  "b8_run1_vs_unbucketed": {
+   "rows_only_in_first": 0,
+   "rows_only_in_second": 0,
+   "pairs_only_in_first": 0,
+   "pairs_only_in_second": 0,
+   "identical": true
+  }
+ },
+ "checks": {
+  "train: 1a 8-bucket run1 == run2": true,
+  "train: 1b 8-bucket 8 threads == 3 threads": true,
+  "train: 2 bucketed == unbucketed": true,
+  "train: 4 S2/S3 counts bucketed == unbucketed": true,
+  "train: 5 K behaviour (all runs)": true,
+  "train: 3 blocking recall bucketed == unbucketed": true,
+  "test: 1a 8-bucket run1 == run2": true,
+  "test: 1b 8-bucket 8 threads == 3 threads": true,
+  "test: 2 bucketed == unbucketed": true,
+  "test: 4 S2/S3 counts bucketed == unbucketed": true,
+  "test: 5 K behaviour (all runs)": true
+ },
+ "all_passed": true
+}

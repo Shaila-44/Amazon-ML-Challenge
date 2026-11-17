@@ -1,0 +1,39 @@
+[
+ {
+  "attempt": 1,
+  "started_utc": "2026-09-26T01:46:41Z",
+  "status": "crashed",
+  "stage": "train blocking",
+  "error": "DuckDB OutOfMemory: temp spill hit 40.5GiB (disk) during unbucketed join+rank",
+  "preserved": "artifacts_v3/attempt1_crashed/ (log, run_config, vec, val_entities; copies, md5-verified)"
+ },
+ {
+  "attempt": 2,
+  "started_utc": "2026-09-26T02:26:50.171426+00:00",
+  "status": "crashed",
+  "changes_vs_attempt1": [
+   "blocking: per-country S1 hash bucketing (n_buckets=8) -- resource fix, output-equivalent",
+   "blocking: IDF sums evaluated in sorted order (list_sum(list_sort(...))) -- float reproducibility only",
+   "blocking: token_type added as final tie-break key in token-slot ordering -- exact-tie reproducibility only",
+   "blocking: per-bucket stats recorded to blocking_stats_{train,test}.json"
+  ],
+  "unchanged": "rarity formula, token selection rule, same-field weighting, tie-break, K=200, model, features, validation, threshold tuning",
+  "equivalence_evidence": "bucket_equivalence_v2/equivalence_report.json (11/11 checks passed)",
+  "log": "pipeline_v3_attempt2.log",
+  "stage": "test feature computation (after test blocking, candidate checks and candidate_pairs.tsv completed)",
+  "error": "OSError 28 no space left on device: single-pass pre-joined feature shards were 25GB for 310.9M test pairs",
+  "preserved": "artifacts_v3/attempt2_crashed/ (log, run_config, candidate_checks_test, blocking_stats_test, checkpoint md5s)"
+ },
+ {
+  "attempt": 3,
+  "started_utc": "2026-09-26T04:17:13.940332+00:00",
+  "status": "launched (resume)",
+  "resumes_from": "attempt 2 checkpoint: model.txt, threshold.txt, vec.pkl, test_candidates.parquet (md5s in attempt2_crashed/checkpoint_md5_before_resume.txt)",
+  "changes_vs_attempt2": [
+   "test featurization in 4 passes by salted S1 hash, zstd temp shards -- resource fix only"
+  ],
+  "equivalence_evidence": "pass_equivalence/equivalence_report.json (1-pass vs 4-pass: identical rows incl. all features and score)",
+  "deleted_before_resume": "regenerable temp only: artifacts_v3/test_scored_shards_tmp (25GB), partial artifacts_v3/test_scored, /tmp/blocking_by_country_*, DuckDB .tmp spill dirs",
+  "log": "pipeline_v3_attempt3.log"
+ }
+]

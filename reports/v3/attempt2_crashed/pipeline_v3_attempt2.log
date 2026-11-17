@@ -1,0 +1,160 @@
+[      0s] run config: {"run_id": "v3-k200-attempt2", "started_utc": "2026-09-26T02:26:51.203050+00:00", "processed_dir": "/home/ubuntu/amazon/dataset/processed", "train_gt": "/home/ubuntu/amazon/dataset_meta/train_ground_truth.tsv", "test_s1": "/home/ubuntu/amazon/dataset_meta/test_source1.tsv", "out_dir": "/home/ubuntu/amazon/output_v3", "artifacts_dir": "/home/ubuntu/amazon/artifacts_v3", "top_k": 200, "max_train_negatives": 8000000, "n_val_entities": 50000, "memory_limit_gb": 46, "workers": 8, "seeds": {"holdout": "solaris-val-v2", "negatives": "solaris-neg-v2", "tfidf_sample": "solaris-tfidf-v2", "lightgbm": 42}, "blocking_config": {"top_k": 200, "min_token_len": 2, "max_doc_freq_frac": 0.02, "max_doc_freq_abs": 1500, "max_tokens_per_entity": 8, "n_buckets": 8, "token_selection": "rarest tokens that survive the S2/S3 doc-frequency filter", "ranking": "idf_same DESC, idf_all DESC, hash(candidate_entity_id)"}, "baseline_model": "/home/ubuntu/amazon/dataset/processed/_model_checkpoint.txt", "baseline_vec": "/home/ubuntu/amazon/dataset/processed/_vec_checkpoint.pkl", "code_md5": {"__init__.py": "d41d8cd98f00b204e9800998ecf8427e", "blocking.py": "3845e8bcb4d155358ea6f0d545236ff9", "diagnostics.py": "0cf81ee5223ae2d06daf4b28ef5f63be", "features.py": "06aabf89cffdc90ee0f2d5128507dd1c", "matching.py": "ffb947438518418a8fac5a8722ed3c8d", "normalize.py": "d82537893aa80ba89fbf802be4f9d5f4", "parallel_features.py": "d637b6a72168cbb24c45da3527ef39cc", "pipeline.py": "6d0d6f3fb570061847429ffa1a815949", "preprocess.py": "7702278af7c65ef42e975f5e3b5b2650", "scoring.py": "77809ed2ff1526a0753ac0ab8f81f172"}}
+[     22s] tfidf fit on 600000 names (holdout excluded): vocab size=98928
+[   1042s] train candidate checks passed: {"name": "train", "s1_entities": 2206821, "expected_s1_entities": 2206821, "top_k": 200, "entities_with_candidates": 2071136, "pairs": 384521147, "max_candidates_per_entity": 200, "median_candidates_per_entity": 200.0, "frac_entities_at_cap": 0.8684914945228126, "entities_with_duplicate_pairs": 0, "entities_with_rank_gaps": 0, "orphan_candidate_rows": 0, "candidates_by_source": {"S2": 191471816, "S3": 193049331}, "passed": true}
+[   1053s] full-scale train blocking recall:
+country src  n_true  recall_k50  recall_k100  recall_k200
+    ALL ALL 7638365    0.680579     0.719395     0.763825
+    ALL  S2 3693619    0.690846     0.728293     0.771383
+    ALL  S3 3944746    0.670965     0.711064     0.756748
+  India ALL 3059843    0.732466     0.764092     0.797147
+  India  S2 1480545    0.767669     0.795073     0.823903
+  India  S3 1579298    0.699464     0.735047     0.772065
+     US ALL 4578522    0.645903     0.689525     0.741555
+     US  S2 2213074    0.639452     0.683617     0.736247
+     US  S3 2365448    0.651937     0.695051     0.746522
+  K  frac_entities_all_true_matches_missed  perfect_classifier_ceiling
+ 50                               0.178715                    0.776319
+100                               0.146441                    0.810294
+200                               0.115132                    0.845931
+[   1102s] train sample: 5702077 positives, 8000000 negatives; holdout: 8707272 candidate pairs (all kept)
+  featurized shard 1/32 (424253 pairs)
+  featurized shard 2/32 (851325 pairs)
+  featurized shard 3/32 (1279569 pairs)
+  featurized shard 4/32 (1708217 pairs)
+  featurized shard 5/32 (2138235 pairs)
+  featurized shard 6/32 (2566422 pairs)
+  featurized shard 7/32 (2994421 pairs)
+  featurized shard 8/32 (3426135 pairs)
+  featurized shard 9/32 (3854672 pairs)
+  featurized shard 10/32 (4283052 pairs)
+  featurized shard 11/32 (4710102 pairs)
+  featurized shard 12/32 (5135955 pairs)
+  featurized shard 13/32 (5567015 pairs)
+  featurized shard 14/32 (5998149 pairs)
+  featurized shard 15/32 (6428563 pairs)
+  featurized shard 16/32 (6857541 pairs)
+  featurized shard 17/32 (7285859 pairs)
+  featurized shard 18/32 (7708635 pairs)
+  featurized shard 19/32 (8136579 pairs)
+  featurized shard 20/32 (8565328 pairs)
+  featurized shard 21/32 (8993084 pairs)
+  featurized shard 22/32 (9420751 pairs)
+  featurized shard 23/32 (9849622 pairs)
+  featurized shard 24/32 (10277895 pairs)
+  featurized shard 25/32 (10703640 pairs)
+  featurized shard 26/32 (11134590 pairs)
+  featurized shard 27/32 (11562262 pairs)
+  featurized shard 28/32 (11987983 pairs)
+  featurized shard 29/32 (12416524 pairs)
+  featurized shard 30/32 (12845158 pairs)
+  featurized shard 31/32 (13274749 pairs)
+  featurized shard 32/32 (13702077 pairs)
+  featurized shard 1/32 (247879 pairs)
+  featurized shard 2/32 (513966 pairs)
+  featurized shard 3/32 (781146 pairs)
+  featurized shard 4/32 (1052376 pairs)
+  featurized shard 5/32 (1327880 pairs)
+  featurized shard 6/32 (1607695 pairs)
+  featurized shard 7/32 (1885323 pairs)
+  featurized shard 8/32 (2169134 pairs)
+  featurized shard 9/32 (2443954 pairs)
+  featurized shard 10/32 (2716284 pairs)
+  featurized shard 11/32 (2988386 pairs)
+  featurized shard 12/32 (3256412 pairs)
+  featurized shard 13/32 (3527105 pairs)
+  featurized shard 14/32 (3799697 pairs)
+  featurized shard 15/32 (4068178 pairs)
+  featurized shard 16/32 (4349854 pairs)
+  featurized shard 17/32 (4624952 pairs)
+  featurized shard 18/32 (4890234 pairs)
+  featurized shard 19/32 (5167852 pairs)
+  featurized shard 20/32 (5432777 pairs)
+  featurized shard 21/32 (5710698 pairs)
+  featurized shard 22/32 (5978961 pairs)
+  featurized shard 23/32 (6246444 pairs)
+  featurized shard 24/32 (6534797 pairs)
+  featurized shard 25/32 (6810440 pairs)
+  featurized shard 26/32 (7071045 pairs)
+  featurized shard 27/32 (7340402 pairs)
+  featurized shard 28/32 (7624730 pairs)
+  featurized shard 29/32 (7898535 pairs)
+  featurized shard 30/32 (8168707 pairs)
+  featurized shard 31/32 (8442160 pairs)
+  featurized shard 32/32 (8707272 pairs)
+[   1708s] train + holdout features done, alignment verified: {"train": {"candidates": 13702077, "feature_rows": 13702077, "key_checksum_match": true, "shared_tokens_checksum_match": true, "spot_checked": 2000, "spot_check_max_abs_diff": 0.0}, "val": {"candidates": 8707272, "feature_rows": 8707272, "key_checksum_match": true, "shared_tokens_checksum_match": true, "spot_checked": 2000, "spot_check_max_abs_diff": 0.0}}
+[LightGBM] [Info] Number of positive: 5702077, number of negative: 8000000
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.128367 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 2296
+[LightGBM] [Info] Number of data points in the train set: 13702077, number of used features: 12
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.416147 -> initscore=-0.338611
+[LightGBM] [Info] Start training from score -0.338611
+[   1815s] model trained
+  featurized shard 1/32 (247879 pairs)
+  featurized shard 2/32 (513966 pairs)
+  featurized shard 3/32 (781146 pairs)
+  featurized shard 4/32 (1052376 pairs)
+  featurized shard 5/32 (1327880 pairs)
+  featurized shard 6/32 (1605508 pairs)
+  featurized shard 7/32 (1885323 pairs)
+  featurized shard 8/32 (2169134 pairs)
+  featurized shard 9/32 (2443954 pairs)
+  featurized shard 10/32 (2716056 pairs)
+  featurized shard 11/32 (2988386 pairs)
+  featurized shard 12/32 (3256412 pairs)
+  featurized shard 13/32 (3527105 pairs)
+  featurized shard 14/32 (3799697 pairs)
+  featurized shard 15/32 (4068178 pairs)
+  featurized shard 16/32 (4349854 pairs)
+  featurized shard 17/32 (4624952 pairs)
+  featurized shard 18/32 (4890234 pairs)
+  featurized shard 19/32 (5167852 pairs)
+  featurized shard 20/32 (5445773 pairs)
+  featurized shard 21/32 (5710698 pairs)
+  featurized shard 22/32 (5978961 pairs)
+  featurized shard 23/32 (6246444 pairs)
+  featurized shard 24/32 (6534797 pairs)
+  featurized shard 25/32 (6795402 pairs)
+  featurized shard 26/32 (7079730 pairs)
+  featurized shard 27/32 (7355373 pairs)
+  featurized shard 28/32 (7629178 pairs)
+  featurized shard 29/32 (7898535 pairs)
+  featurized shard 30/32 (8171988 pairs)
+  featurized shard 31/32 (8442160 pairs)
+  featurized shard 32/32 (8707272 pairs)
+[   2368s] VALIDATION (all candidates, complete ground truth): {"threshold": 0.99, "holdout_f05": 0.7284395170128803, "holdout_f05_by_country": {"India": 0.7504, "US": 0.7139}, "holdout_blocking_pair_recall": 0.764155793146072, "holdout_perfect_classifier_ceiling": 0.8465641789946644, "holdout_entities": 50000, "holdout_pairs": 8707272, "top_k": 200, "k_decomposition": [{"model": "v3_retrained", "K": 50, "pair_recall": 0.6808354560524933, "perfect_classifier_ceiling": 0.7762862674962074, "f05_at_0_96": 0.6510793321270912, "tuned_threshold": 0.99, "f05_at_tuned": 0.6729188752606452}, {"model": "v3_retrained", "K": 100, "pair_recall": 0.7195180416688327, "perfect_classifier_ceiling": 0.8108045962461754, "f05_at_0_96": 0.6748849433265329, "tuned_threshold": 0.99, "f05_at_tuned": 0.6997038267497888}, {"model": "v3_retrained", "K": 200, "pair_recall": 0.764155793146072, "perfect_classifier_ceiling": 0.8465641789946644, "f05_at_0_96": 0.7005425089149034, "tuned_threshold": 0.99, "f05_at_tuned": 0.7284395170128803}, {"model": "v1_model_(old_vec)", "K": 50, "pair_recall": 0.6808354560524933, "perfect_classifier_ceiling": 0.7762862674962074, "f05_at_0_96": 0.6779684753990798, "tuned_threshold": 0.96, "f05_at_tuned": 0.6779684753990798}, {"model": "v1_model_(old_vec)", "K": 100, "pair_recall": 0.7195180416688327, "perfect_classifier_ceiling": 0.8108045962461754, "f05_at_0_96": 0.7047272189532248, "tuned_threshold": 0.96, "f05_at_tuned": 0.7047272189532248}, {"model": "v1_model_(old_vec)", "K": 200, "pair_recall": 0.764155793146072, "perfect_classifier_ceiling": 0.8465641789946644, "f05_at_0_96": 0.7334510026081139, "tuned_threshold": 0.96, "f05_at_tuned": 0.7334510026081139}]}
+[   3290s] test candidate checks passed: {"name": "test", "s1_entities": 1732544, "expected_s1_entities": 1732544, "top_k": 200, "entities_with_candidates": 1664808, "pairs": 310907734, "max_candidates_per_entity": 200, "median_candidates_per_entity": 200.0, "frac_entities_at_cap": 0.8784562544149235, "entities_with_duplicate_pairs": 0, "entities_with_rank_gaps": 0, "orphan_candidate_rows": 0, "candidates_by_source": {"S2": 156364869, "S3": 154542865}, "passed": true}
+[   3354s] wrote /home/ubuntu/amazon/output_v3/candidate_pairs.tsv
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ubuntu/amazon/code/business_entity_resolution/src/parallel_features.py", line 52, in _work
+    writer.write_table(table)
+  File "/home/ubuntu/amazon/code/business_entity_resolution/.venv/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 1216, in write_table
+    self.writer.write_table(table, row_group_size=row_group_size)
+  File "pyarrow/_parquet.pyx", line 2473, in pyarrow._parquet.ParquetWriter.write_table
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+OSError: [Errno 28] Error writing bytes to file. Detail: [errno 28] No space left on device
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/ubuntu/amazon/code/business_entity_resolution/src/pipeline.py", line 566, in <module>
+    main()
+  File "/home/ubuntu/amazon/code/business_entity_resolution/src/pipeline.py", line 556, in main
+    run(
+  File "/home/ubuntu/amazon/code/business_entity_resolution/src/pipeline.py", line 499, in run
+    featurize_parallel(con, f"read_parquet('{test_cands}')", *test_s, scored, vec_path,
+  File "/home/ubuntu/amazon/code/business_entity_resolution/src/parallel_features.py", line 142, in featurize_parallel
+    for i, n in enumerate(pool.imap_unordered(_work, jobs), 1):
+  File "/usr/lib/python3.10/multiprocessing/pool.py", line 873, in next
+    raise value
+OSError: [Errno 28] Error writing bytes to file. Detail: [errno 28] No space left on device

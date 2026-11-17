@@ -1,0 +1,29 @@
+{
+ "1": {
+  "rows": 1795876,
+  "seconds": 60.1,
+  "alignment": {
+   "candidates": 1795876,
+   "feature_rows": 1795876,
+   "key_checksum_match": true,
+   "shared_tokens_checksum_match": true,
+   "spot_checked": 2000,
+   "spot_check_max_abs_diff": 0.0
+  }
+ },
+ "4": {
+  "rows": 1795876,
+  "seconds": 65.2,
+  "alignment": {
+   "candidates": 1795876,
+   "feature_rows": 1795876,
+   "key_checksum_match": true,
+   "shared_tokens_checksum_match": true,
+   "spot_checked": 2000,
+   "spot_check_max_abs_diff": 0.0
+  }
+ },
+ "rows_only_in_1pass": 0,
+ "rows_only_in_4pass": 0,
+ "identical": true
+}

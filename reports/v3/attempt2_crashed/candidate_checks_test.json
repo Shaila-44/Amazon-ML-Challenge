@@ -1,0 +1,19 @@
+{
+ "name": "test",
+ "s1_entities": 1732544,
+ "expected_s1_entities": 1732544,
+ "top_k": 200,
+ "entities_with_candidates": 1664808,
+ "pairs": 310907734,
+ "max_candidates_per_entity": 200,
+ "median_candidates_per_entity": 200.0,
+ "frac_entities_at_cap": 0.8784562544149235,
+ "entities_with_duplicate_pairs": 0,
+ "entities_with_rank_gaps": 0,
+ "orphan_candidate_rows": 0,
+ "candidates_by_source": {
+  "S2": 156364869,
+  "S3": 154542865
+ },
+ "passed": true
+}

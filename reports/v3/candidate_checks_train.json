@@ -1,0 +1,19 @@
+{
+ "name": "train",
+ "s1_entities": 2206821,
+ "expected_s1_entities": 2206821,
+ "top_k": 200,
+ "entities_with_candidates": 2071136,
+ "pairs": 384521147,
+ "max_candidates_per_entity": 200,
+ "median_candidates_per_entity": 200.0,
+ "frac_entities_at_cap": 0.8684914945228126,
+ "entities_with_duplicate_pairs": 0,
+ "entities_with_rank_gaps": 0,
+ "orphan_candidate_rows": 0,
+ "candidates_by_source": {
+  "S2": 191471816,
+  "S3": 193049331
+ },
+ "passed": true
+}
